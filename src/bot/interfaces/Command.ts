@@ -6,7 +6,7 @@ import {
   MessagePayload,
 } from "discord.js";
 
-import Client from "@bot/client";
+import Client from "#bot/client";
 
 interface Run {
   (

@@ -1,6 +1,6 @@
 import { Interaction } from "discord.js";
 
-import { Event, Command } from "@bot/interfaces";
+import { Event, Command } from "#bot/interfaces";
 
 export const event: Event = {
   name: "interactionCreate",

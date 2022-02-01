@@ -1,7 +1,7 @@
 import Discord from "discord.js";
 
-import MessageHelper from "@bot/helpers/MessageHelper";
-import { Message } from "@bot/interfaces";
+import { MessageHelper } from "#bot/helpers";
+import { Message } from "#bot/interfaces";
 
 test("Given a message to createEmbedMessage method, Should create embed message", () => {
   const message: Message = {

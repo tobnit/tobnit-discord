@@ -5,11 +5,11 @@ import {
   User,
 } from "discord.js";
 
-import Client from "@bot/client";
-import { Command, CommandResponse } from "@bot/interfaces";
-import MessageHelper from "@bot/helpers/MessageHelper";
-import { generateBoardView } from "@bot/helpers/TicTacToeHelper";
-import { TicTacToeService } from "@bot/services";
+import Client from "#bot/client";
+import { Command, CommandResponse } from "#bot/interfaces";
+import { MessageHelper } from "#bot/helpers";
+import { generateBoardView } from "#bot/helpers";
+import { TicTacToeService } from "#bot/services";
 
 export const command: Command = {
   name: "play",
@@ -45,7 +45,7 @@ export const command: Command = {
     const messageHelper = new MessageHelper();
     const challengeEmbed = messageHelper.createEmbedMessage({
       title: "Uma solicitação de partida foi feita!",
-      description: `<@${idSecondPlayer}> foi desafiado(a) por <@${idFirstPlayer}> para uma partida de Jogo da Velha.\n\n**Você aceita?**`,
+      description: `<#${idSecondPlayer}> foi desafiado(a) por <#${idFirstPlayer}> para uma partida de Jogo da Velha.\n\n**Você aceita?**`,
       color: "#0099ff",
     });
 
@@ -65,7 +65,7 @@ export const command: Command = {
             const board = generateBoardView([0, 0, 0, 0, 0, 0, 0, 0, 0]);
 
             const messageTitle = "A partida foi aceita!";
-            const messageDescription = `<@${idFirstPlayer}> você começa o jogo!\n\nPara jogar envie o comando **/marcar <casa>**\n\n`;
+            const messageDescription = `<#${idFirstPlayer}> você começa o jogo!\n\nPara jogar envie o comando **/marcar <casa>**\n\n`;
 
             const successMessage = messageHelper.createEmbedMessage({
               title: messageTitle,
@@ -84,7 +84,7 @@ export const command: Command = {
           await ticTacToeService.deleteGameByFirstPlayer(idFirstPlayer);
 
           const messageTitle = "A partida não foi aceita!";
-          const messageDescription = `Alguem não está com vontade de jogar <@${idFirstPlayer}> :pensive:`;
+          const messageDescription = `Alguem não está com vontade de jogar <#${idFirstPlayer}> :pensive:`;
 
           const refusedMessage = messageHelper.createEmbedMessage({
             title: messageTitle,
@@ -102,7 +102,7 @@ export const command: Command = {
           const messageTitle = "Acabou o tempo!";
           const messageDescription =
             `Já se passou 30 segundos e o adversário não aceitou a partida.\n` +
-            `Eu acho que ele(a) está te ignorando <@${idFirstPlayer}> :flushed:`;
+            `Eu acho que ele(a) está te ignorando <#${idFirstPlayer}> :flushed:`;
 
           const timeoutMessage = messageHelper.createEmbedMessage({
             title: messageTitle,

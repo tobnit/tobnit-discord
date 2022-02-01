@@ -1,7 +1,7 @@
 import { model } from "mongoose";
 
-import { Thought } from "@shared/interfaces";
-import { ThoughtSchema } from "@shared/schemas";
+import { Thought } from "#shared/interfaces";
+import { ThoughtSchema } from "#shared/schemas";
 
 export class ThoughtRepository {
   private ThoughtModel = model<Thought>("Thought", ThoughtSchema);

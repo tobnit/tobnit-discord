@@ -1,7 +1,7 @@
 import { model } from "mongoose";
 
-import { TicTacToe } from "@shared/interfaces";
-import { TicTacToeSchema } from "@shared/schemas";
+import { TicTacToe } from "#shared/interfaces";
+import { TicTacToeSchema } from "#shared/schemas";
 
 export class TicTacToeRepository {
   private TicTacToeModel = model<TicTacToe>("TicTacToe", TicTacToeSchema);

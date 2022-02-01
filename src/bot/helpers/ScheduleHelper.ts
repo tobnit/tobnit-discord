@@ -1,8 +1,8 @@
 import { RecurrenceRule } from "node-schedule";
 
-import { TimerRules } from "@bot/interfaces";
+import { TimerRules } from "#bot/interfaces";
 
-export default class ScheduleHelper {
+export class ScheduleHelper {
   static createTimerRule(rules: TimerRules): RecurrenceRule {
     if (
       process.env.ENVIRONMENT === "development" &&

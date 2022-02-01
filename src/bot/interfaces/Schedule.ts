@@ -1,5 +1,5 @@
 import { RecurrenceRule } from "node-schedule";
-import Client from "@bot/client";
+import Client from "#bot/client";
 
 interface CallbackProps {
   (client: Client): Promise<void>;

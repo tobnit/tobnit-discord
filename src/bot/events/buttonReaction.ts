@@ -1,12 +1,11 @@
 import { Interaction } from "discord.js";
 
-import Client from "@bot/client";
-import { Event } from "@bot/interfaces";
+import Client from "#bot/client";
+import { Event } from "#bot/interfaces";
 
-import { generateComponentsToToken } from "@bot/helpers/ComponentsHelper";
-import { generateTokenToUser } from "@bot/helpers/GenerateToken";
+import { generateTokenToUser, generateComponentsToToken } from "#bot/helpers";
 
-import { GenerateTokenRepository, UserRepository } from "@shared/repositories/";
+import { GenerateTokenRepository, UserRepository } from "#shared/repositories/";
 
 export const event: Event = {
   name: "interactionCreate",

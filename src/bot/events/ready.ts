@@ -1,7 +1,7 @@
 import { readdirSync } from "fs";
 import path from "path";
 
-import { Event } from "@bot/interfaces";
+import { Event } from "#bot/interfaces";
 
 export const event: Event = {
   name: "ready",

@@ -1,6 +1,6 @@
 import { RecurrenceRule } from "node-schedule";
 
-import ScheduleHelper from "@bot/helpers/ScheduleHelper";
+import { ScheduleHelper } from "#bot/helpers";
 
 test("Given a specific hour to schedule helper handler, With Production Environment, Should with return the RecurrenceRule correctly", () => {
   const ruleCreatedByHelper = ScheduleHelper.createTimerRule({

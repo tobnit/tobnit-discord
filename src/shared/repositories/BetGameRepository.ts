@@ -1,7 +1,7 @@
 import { model } from "mongoose";
 
-import { BetGame } from "@shared/interfaces";
-import { BetGameSchema } from "@shared/schemas";
+import { BetGame } from "#shared/interfaces";
+import { BetGameSchema } from "#shared/schemas";
 
 export class BetGameRepository {
   private BetGameModel = model<BetGame>("BetGame", BetGameSchema);

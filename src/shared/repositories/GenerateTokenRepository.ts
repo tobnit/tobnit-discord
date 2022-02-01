@@ -1,7 +1,7 @@
 import { model } from "mongoose";
 
-import { GenerateToken } from "@shared/interfaces";
-import { GenerateTokenSchema } from "@shared/schemas";
+import { GenerateToken } from "#shared/interfaces";
+import { GenerateTokenSchema } from "#shared/schemas";
 
 export class GenerateTokenRepository {
   private GenerateTokenModel = model<GenerateToken>(

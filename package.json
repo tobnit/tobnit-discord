@@ -42,6 +42,7 @@
     "discord.js": "^13.1.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "module-alias": "^2.2.2",
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.34",
     "mongoose": "^6.0.4",
@@ -59,5 +60,10 @@
   "engines": {
     "node": "16.6.2",
     "yarn": "1.x"
+  },
+  "imports": {
+    "#api/*": "./dist/api/*/index.js",
+    "#bot/*": "./dist/bot/*/index.js",
+    "#shared/*": "./dist/shared/*/index.js"
   }
 }

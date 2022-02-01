@@ -1,9 +1,9 @@
 import { CommandInteractionOptionResolver, Interaction } from "discord.js";
 
-import Client from "@bot/client";
-import { Command } from "@bot/interfaces";
+import Client from "#bot/client";
+import { Command } from "#bot/interfaces";
 
-import { JokeRepository } from "@shared/repositories";
+import { JokeRepository } from "#shared/repositories";
 
 export const command: Command = {
   name: "adicionar-piada",

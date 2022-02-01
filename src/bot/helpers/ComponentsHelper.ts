@@ -6,8 +6,8 @@ import {
   MessageSelectOptionData,
 } from "discord.js";
 
-import { GenerateToken } from "@shared/interfaces";
-import { UserRepository } from "@shared/repositories";
+import { GenerateToken } from "#shared/interfaces";
+import { UserRepository } from "#shared/repositories";
 
 export async function generateComponentsToToken(
   generateToken: GenerateToken

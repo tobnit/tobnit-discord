@@ -2,8 +2,8 @@ import { Guild } from "discord.js";
 import { readdirSync } from "fs";
 import path from "path";
 
-import Client from "@bot/client";
-import { Event } from "@bot/interfaces";
+import Client from "#bot/client";
+import { Event } from "#bot/interfaces";
 
 export const event: Event = {
   name: "guildCreate",

@@ -1,7 +1,7 @@
 import { Schema } from "mongoose";
 import { v4 as uuidv4 } from "uuid";
 
-import { User } from "@shared/interfaces";
+import { User } from "#shared/interfaces";
 
 export const UserSchema = new Schema<User>({
   id: {

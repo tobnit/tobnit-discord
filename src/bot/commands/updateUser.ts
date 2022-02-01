@@ -1,12 +1,12 @@
 import { CommandInteractionOptionResolver, Interaction } from "discord.js";
 import moment from "moment-timezone";
 
-import Client from "@bot/client";
-import { Command } from "@bot/interfaces";
-import MessageHelper from "@bot/helpers/MessageHelper";
+import Client from "#bot/client";
+import { Command } from "#bot/interfaces";
+import { MessageHelper } from "#bot/helpers";
 
-import { User } from "@shared/interfaces";
-import { UserRepository } from "@shared/repositories";
+import { User } from "#shared/interfaces";
+import { UserRepository } from "#shared/repositories";
 
 export const command: Command = {
   name: "atualizar-usuario",

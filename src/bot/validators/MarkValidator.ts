@@ -1,9 +1,9 @@
-import { CellEnum, MarkEnum } from "@bot/enums";
-import { getPlayerNumber } from "@bot/helpers/TicTacToeHelper";
+import { CellEnum, MarkEnum } from "#bot/enums";
+import { getPlayerNumber } from "#bot/helpers";
 
-import { TicTacToe } from "@shared/interfaces";
+import { TicTacToe } from "#shared/interfaces";
 
-export default async function validateMarkTheCell(
+export async function validateMarkTheCell(
   game: TicTacToe,
   playerId: string,
   cell: string

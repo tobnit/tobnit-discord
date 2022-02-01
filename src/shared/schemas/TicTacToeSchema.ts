@@ -1,5 +1,5 @@
 import { Schema } from "mongoose";
-import { TicTacToe } from "@shared/interfaces";
+import { TicTacToe } from "#shared/interfaces";
 
 export const TicTacToeSchema = new Schema<TicTacToe>({
   first_player: { type: String, required: true },

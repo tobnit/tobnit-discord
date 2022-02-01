@@ -1,5 +1,5 @@
-import { Command } from "@bot/interfaces";
-import { JokeRepository } from "@shared/repositories";
+import { Command } from "#bot/interfaces";
+import { JokeRepository } from "#shared/repositories";
 
 export const command: Command = {
   name: "piada",

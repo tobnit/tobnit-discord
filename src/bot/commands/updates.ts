@@ -4,9 +4,9 @@ import {
   Interaction,
 } from "discord.js";
 
-import Client from "@bot/client";
-import { Command } from "@bot/interfaces";
-import MessageHelper from "@bot/helpers/MessageHelper";
+import Client from "#bot/client";
+import { Command } from "#bot/interfaces";
+import { MessageHelper } from "#bot/helpers";
 
 export const command: Command = {
   name: "update",

@@ -1,5 +1,5 @@
 import { Schema } from "mongoose";
-import { BetGame } from "@shared/interfaces";
+import { BetGame } from "#shared/interfaces";
 
 export const BetGameSchema = new Schema<BetGame>({
   pollCode: {

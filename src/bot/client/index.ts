@@ -3,8 +3,8 @@ import { connect } from "mongoose";
 import path from "path";
 import { readdirSync } from "fs";
 
-import { Command, Config, Event } from "@bot/interfaces";
-import { Schedule } from "@bot/core";
+import { Command, Config, Event } from "#bot/interfaces";
+import { Schedule } from "#bot/core";
 
 class ExtendedClient extends Client {
   public commands: Collection<string, Command> = new Collection();
@@ -22,7 +22,7 @@ class ExtendedClient extends Client {
   public async init() {
     this.login(this.config.botToken);
 
-    const mongURI = `mongodb+srv://${this.config.dbUser}:${this.config.dbPass}@${this.config.dbHost}/${this.config.environment}`;
+    const mongURI = `mongodb+srv://${this.config.dbUser}:${this.config.dbPass}#${this.config.dbHost}/${this.config.environment}`;
     connect(mongURI);
 
     const commandPath = path.join(__dirname, "..", "commands");

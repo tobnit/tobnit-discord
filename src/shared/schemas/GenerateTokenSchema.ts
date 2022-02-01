@@ -1,5 +1,5 @@
 import { Schema } from "mongoose";
-import { GenerateToken } from "@shared/interfaces";
+import { GenerateToken } from "#shared/interfaces";
 
 export const GenerateTokenSchema = new Schema<GenerateToken>({
   userId: {

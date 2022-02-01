@@ -1,8 +1,8 @@
 import { CommandInteractionOptionResolver, Interaction } from "discord.js";
 
-import Client from "@bot/client";
-import { Command } from "@bot/interfaces";
-import { TicTacToeService } from "@bot/services";
+import Client from "#bot/client";
+import { Command } from "#bot/interfaces";
+import { TicTacToeService } from "#bot/services";
 
 export const command: Command = {
   name: "desistir",
@@ -18,6 +18,6 @@ export const command: Command = {
     const ticTacToeService = new TicTacToeService(interaction);
     await ticTacToeService.deleteGameByFirstPlayer(playerId);
 
-    return `O jogador <@${playerId}> desistiu da partida.\nFicou com medinho foi? :clown:`;
+    return `O jogador <#${playerId}> desistiu da partida.\nFicou com medinho foi? :clown:`;
   },
 };

@@ -1,8 +1,8 @@
 import Discord from "discord.js";
 
-import { Message } from "@bot/interfaces";
+import { Message } from "#bot/interfaces";
 
-class MessageHelper {
+export class MessageHelper {
   private MessageEmbed = new Discord.MessageEmbed();
 
   public createEmbedMessage(message: Message): Discord.MessageEmbed {
@@ -21,5 +21,3 @@ class MessageHelper {
     return this.MessageEmbed;
   }
 }
-
-export default MessageHelper;

@@ -1,7 +1,7 @@
 import { model } from "mongoose";
 
-import { User } from "@shared/interfaces";
-import { UserSchema } from "@shared/schemas";
+import { User } from "#shared/interfaces";
+import { UserSchema } from "#shared/schemas";
 
 export class UserRepository {
   private UserModel = model<User>("User", UserSchema);

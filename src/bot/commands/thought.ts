@@ -1,6 +1,6 @@
-import { Command } from "@bot/interfaces";
+import { Command } from "#bot/interfaces";
 
-import { ThoughtRepository } from "@shared/repositories";
+import { ThoughtRepository } from "#shared/repositories";
 
 export const command: Command = {
   name: "pensamento",

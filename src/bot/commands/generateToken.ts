@@ -1,10 +1,10 @@
 import { Interaction } from "discord.js";
 
-import Client from "@bot/client";
-import { Command } from "@bot/interfaces";
-import { generateComponentsToToken } from "@bot/helpers/ComponentsHelper";
+import Client from "#bot/client";
+import { Command } from "#bot/interfaces";
+import { generateComponentsToToken } from "#bot/helpers";
 
-import { GenerateTokenRepository } from "@shared/repositories";
+import { GenerateTokenRepository } from "#shared/repositories";
 
 export const command: Command = {
   name: "gerar-token",

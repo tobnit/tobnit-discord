@@ -5,10 +5,10 @@ import {
 } from "discord.js";
 import moment from "moment";
 
-import Client from "@bot/client";
-import { Command } from "@bot/interfaces";
+import Client from "#bot/client";
+import { Command } from "#bot/interfaces";
 
-import { BetGameRepository } from "@shared/repositories";
+import { BetGameRepository } from "#shared/repositories";
 
 export const command: Command = {
   name: "criar-jogo-apostas",

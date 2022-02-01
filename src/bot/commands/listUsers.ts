@@ -1,11 +1,11 @@
 import { CommandInteractionOptionResolver, Interaction } from "discord.js";
 import moment from "moment";
 
-import Client from "@bot/client";
-import { Command } from "@bot/interfaces";
-import MessageHelper from "@bot/helpers/MessageHelper";
+import Client from "#bot/client";
+import { Command } from "#bot/interfaces";
+import { MessageHelper } from "#bot/helpers";
 
-import { UserRepository } from "@shared/repositories";
+import { UserRepository } from "#shared/repositories";
 
 export const command: Command = {
   name: "listar-usuarios",

@@ -1,8 +1,8 @@
 import axios from "axios";
 import { URLSearchParams } from "url";
 
-import { GenerateToken, User } from "@shared/interfaces";
-import { UserRepository } from "@shared/repositories";
+import { GenerateToken, User } from "#shared/interfaces";
+import { UserRepository } from "#shared/repositories";
 
 export async function generateTokenToUser(
   generateToken: GenerateToken

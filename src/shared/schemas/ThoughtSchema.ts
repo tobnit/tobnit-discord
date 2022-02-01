@@ -1,5 +1,5 @@
 import { Schema } from "mongoose";
-import { Thought } from "@shared/interfaces";
+import { Thought } from "#shared/interfaces";
 
 export const ThoughtSchema = new Schema<Thought>({
   message: { type: String, required: true },

@@ -4,10 +4,10 @@ import {
   MessageEmbed,
 } from "discord.js";
 
-import Client from "@bot/client";
-import { Command } from "@bot/interfaces";
+import Client from "#bot/client";
+import { Command } from "#bot/interfaces";
 
-import { BetGameRepository } from "@shared/repositories";
+import { BetGameRepository } from "#shared/repositories";
 
 export const command: Command = {
   name: "apostar",

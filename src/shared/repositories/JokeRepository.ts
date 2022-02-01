@@ -1,7 +1,7 @@
 import { model } from "mongoose";
 
-import { Joke } from "@shared/interfaces";
-import { JokeSchema } from "@shared/schemas";
+import { Joke } from "#shared/interfaces";
+import { JokeSchema } from "#shared/schemas";
 
 export class JokeRepository {
   private JokeModel = model<Joke>("Joke", JokeSchema);

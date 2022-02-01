@@ -1,9 +1,9 @@
 import { Message } from "discord.js";
 
-import Client from "@bot/client";
-import { goodMorningMessages } from "@bot/data/goodMorningMessages";
-import ScheduleHelper from "@bot/helpers/ScheduleHelper";
-import { Schedule } from "@bot/interfaces";
+import Client from "#bot/client";
+import { goodMorningMessages } from "#bot/data";
+import { ScheduleHelper } from "#bot/helpers";
+import { Schedule } from "#bot/interfaces";
 
 export const schedule: Schedule = {
   name: "sendGoodMorningMessage",

@@ -1,6 +1,6 @@
 import { Interaction } from "discord.js";
 
-import { MarkEnum } from "@bot/enums/";
+import { MarkEnum } from "#bot/enums/";
 
 import {
   generateEmptyBoard,
@@ -8,13 +8,12 @@ import {
   refreshBoard,
   verifyIfHasAWinner,
   verifyIfIsBoardFull,
-} from "@bot/helpers/TicTacToeHelper";
+} from "#bot/helpers";
 
-import validatePlayNewGame from "@bot/validators/PlayValidator";
-import validateMarkTheCell from "@bot/validators/MarkValidator";
+import { validatePlayNewGame, validateMarkTheCell } from "#bot/validators";
 
-import { TicTacToe } from "@shared/interfaces";
-import { TicTacToeRepository } from "@shared/repositories";
+import { TicTacToe } from "#shared/interfaces";
+import { TicTacToeRepository } from "#shared/repositories";
 
 interface BoardProps {
   view: string;
@@ -87,8 +86,8 @@ export class TicTacToeService {
 
     const playerGame = await this.gameRepository.getGameByPlayerId(playerId);
 
-    const firstPlayerMention = `<@!${playerGame.first_player}>`;
-    const secondPlayerMention = `<@!${playerGame.second_player}>`;
+    const firstPlayerMention = `<#!${playerGame.first_player}>`;
+    const secondPlayerMention = `<#!${playerGame.second_player}>`;
 
     if (hasAWinner !== 0 || isBoardFull) {
       await this.gameRepository.deleteGameByFirstPlayer(

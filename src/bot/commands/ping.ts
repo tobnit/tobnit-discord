@@ -1,7 +1,7 @@
 import { CommandInteractionOptionResolver, Interaction } from "discord.js";
 
-import Client from "@bot/client";
-import { Command } from "@bot/interfaces";
+import Client from "#bot/client";
+import { Command } from "#bot/interfaces";
 
 export const command: Command = {
   name: "ping",

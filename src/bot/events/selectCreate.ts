@@ -1,9 +1,9 @@
 import { Interaction } from "discord.js";
 
-import { Event } from "@bot/interfaces";
-import { generateComponentsToToken } from "@bot/helpers/ComponentsHelper";
+import { Event } from "#bot/interfaces";
+import { generateComponentsToToken } from "#bot/helpers";
 
-import { GenerateTokenRepository } from "@shared/repositories";
+import { GenerateTokenRepository } from "#shared/repositories";
 
 export const event: Event = {
   name: "interactionCreate",

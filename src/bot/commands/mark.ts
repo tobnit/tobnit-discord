@@ -1,9 +1,9 @@
 import { CommandInteractionOptionResolver, Interaction } from "discord.js";
 
-import Client from "@bot/client";
-import { Command } from "@bot/interfaces";
-import MessageHelper from "@bot/helpers/MessageHelper";
-import { TicTacToeService } from "@bot/services";
+import Client from "#bot/client";
+import { Command } from "#bot/interfaces";
+import { MessageHelper } from "#bot/helpers";
+import { TicTacToeService } from "#bot/services";
 
 export const command: Command = {
   name: "marcar",
@@ -90,7 +90,7 @@ export const command: Command = {
 
       const idNextPlayer =
         playerId === game.first_player ? game.second_player : game.first_player;
-      const mentionNextPlayer = `<@!${idNextPlayer}>`;
+      const mentionNextPlayer = `<#!${idNextPlayer}>`;
 
       await interaction.channel.send(`Sua vez ${mentionNextPlayer}!`);
 

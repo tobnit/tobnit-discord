@@ -1,12 +1,12 @@
 import { Interaction } from "discord.js";
-import { TicTacToeRepository } from "@shared/repositories";
+import { TicTacToeRepository } from "#shared/repositories";
 
 interface PlayersProps {
   firstPlayer: string;
   secondPlayer: string;
 }
 
-export default async function validatePlayNewGame(
+export async function validatePlayNewGame(
   players: PlayersProps,
   interaction: Interaction
 ): Promise<void> {

@@ -1,6 +1,6 @@
-import { CellEnum, MarkEnum } from "@bot/enums";
+import { CellEnum, MarkEnum } from "#bot/enums";
 
-import { TicTacToe } from "@shared/interfaces";
+import { TicTacToe } from "#shared/interfaces";
 
 export function generateEmptyBoard() {
   let view =
