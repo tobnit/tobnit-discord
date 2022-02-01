@@ -1,6 +1,6 @@
 import express from "express";
 import "dotenv/config";
-import Client from "./Client";
+import Client from "./bot/client";
 
 new Client({
   intents: 32767,
@@ -18,5 +18,7 @@ new Client({
 
 const server = express();
 const PORT = process.env.PORT || 3000;
+
+
 
 server.listen(PORT);
