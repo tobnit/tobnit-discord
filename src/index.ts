@@ -2,7 +2,7 @@ import express from "express";
 import "dotenv/config";
 import cors from "cors";
 
-import router from "#api/router";
+import router from "#api/routers";
 import Client from "#bot/client";
 
 new Client({
