@@ -22,7 +22,9 @@ class ExtendedClient extends Client {
   public async init() {
     this.login(this.config.botToken);
 
-    const mongURI = `mongodb+srv://${this.config.dbUser}:${this.config.dbPass}#${this.config.dbHost}/${this.config.environment}`;
+    const mongURI = `mongodb+srv://${this.config.dbUser}:${this.config.dbPass}@${this.config.dbHost}/${this.config.environment}`;
+    console.log(mongURI);
+
     connect(mongURI);
 
     const commandPath = path.join(__dirname, "..", "commands");
