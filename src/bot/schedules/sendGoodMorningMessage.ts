@@ -1,5 +1,3 @@
-import { Message } from "discord.js";
-
 import Client from "#bot/client";
 import { goodMorningMessages } from "#bot/data";
 import { ScheduleHelper } from "#bot/helpers";
@@ -12,8 +10,10 @@ export const schedule: Schedule = {
     const messages = goodMorningMessages;
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
-    const sendMessage = (message: Message) => {
-      message.channel.send(randomMessage);
+    const sendMessage = () => {
+      try {
+        client.channels.cache.get("914873869242875947").send(randomMessage);
+      } catch(error) {}
     };
 
     client.once("messageCreate", sendMessage);
