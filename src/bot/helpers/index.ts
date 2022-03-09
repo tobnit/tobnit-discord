@@ -4,6 +4,7 @@ export {
   generateGatewayToken,
   generatePixToken,
 } from "./GenerateToken";
+export { generateCpf } from "./GenerateCpf";
 export { MessageHelper } from "./MessageHelper";
 export { ScheduleHelper } from "./ScheduleHelper";
 export {
