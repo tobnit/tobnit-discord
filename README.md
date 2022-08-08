@@ -12,6 +12,6 @@ Desenvolver um bot para Discord que possibilite um ambiente mais saudável para 
 ## Funções do trabalho
 - Criação de tokens
 
-## Licença
+## Licença 
 
 [MIT](LICENSE)
